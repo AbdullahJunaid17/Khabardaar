@@ -17,7 +17,7 @@ from src.propaganda import detect_propaganda_techniques
 load_dotenv()
 
 # ── Page config ──────────────────────────────────────────────────────────────
-st.set_page_config(page_title="Bias Lens", layout="centered", page_icon="⬡")
+st.set_page_config(page_title="Khabardaar", layout="centered", page_icon="⬡")
 
 # ── Complete CSS (your exact original dark theme, nothing omitted) ───────────
 st.markdown("""
