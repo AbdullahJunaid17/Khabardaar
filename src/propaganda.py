@@ -16,8 +16,9 @@ PROMPT = """Analyze the following news article. Identify which of these propagan
 - Slogans
 - Whataboutism
 - Doubt / Casting Suspicion
+- Any other classic logical fallacies
 
-Only flag if it is clearly distorting a sentence instead of stating it
+Only flag if it is clearly distorting a sentence instead of stating it.
 For each technique found, quote the exact sentence(s) from the article that use it.
 Always quote the full sentence for each technique 
 If none are found, return an empty list.
