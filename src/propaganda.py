@@ -36,7 +36,7 @@ def detect_propaganda_techniques(text: str) -> list[dict]:
     prompt = PROMPT.format(article_text=text[:4000])
     try:
         response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",   # fast & free tier
+            model="openai/gpt-oss-20b",   # fast & free tier
             messages=[{"role": "user", "content": prompt}],
             temperature=0.0,
             max_tokens=1000,
