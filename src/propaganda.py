@@ -5,6 +5,7 @@ import json
 from groq import Groq
 
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+#Only flag if it is clearly distorting a sentence instead of stating it.
 
 PROMPT = """Analyze the following news article. Identify which of these propaganda techniques are present:
 - Loaded Language / Emotional Words
@@ -16,9 +17,8 @@ PROMPT = """Analyze the following news article. Identify which of these propagan
 - Slogans
 - Whataboutism
 - Doubt / Casting Suspicion
-- Any other classic logical fallacies
+- Any other classic logical fallacies (Ad Hominem, Gross Generalisation etc)
 
-Only flag if it is clearly distorting a sentence instead of stating it.
 For each technique found, quote the exact sentence(s) from the article that use it.
 Always quote the full sentence for each technique 
 If none are found, return an empty list.
